@@ -1,0 +1,1 @@
+java -jar ../../Tools/SNGP/SNGP.jar config/config_refined_x1.properties

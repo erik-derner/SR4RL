@@ -1,0 +1,1 @@
+java -jar ../../Tools/SNGP/SNGP.jar config/config_random_x1.properties

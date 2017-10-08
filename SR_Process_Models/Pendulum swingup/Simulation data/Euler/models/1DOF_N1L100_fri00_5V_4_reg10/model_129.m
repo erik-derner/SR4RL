@@ -1,0 +1,46 @@
+function V = model_129(x)
+
+x1 = x(:,1);
+x2 = x(:,2);
+x3 = x(:,3);
+
+V = 9.07906569 + ...
+-4.0E-8 *  ( sin( (0.01234568 .*  sign( ( cos(((x1*1.0 * 1.0 + x2*0.0 * 1.0 + x3*0.0 * 1.0 + 0.0 * 1.0)))  .* -1.0) ) ) ) )  + ...
+-1.1E-7 *  ( ( ( sin( cos(((x1*0.0 * 1.0 + x2*1.0 * 1.0 + x3*0.0 * 1.0 + 0.0 * 1.0))) )  .* 0.0776181)  .*  ( sin(((x1*0.0 * 1.0 + x2*0.0 * 1.0 + x3*1.0 * 1.0 + 0.0 * 1.0)))  .* -0.12796369) ) )  + ...
+-2.6391E-4 *  ( sin( cos( (((x1*0.0 * 1.0 + x2*0.0 * 1.0 + x3*1.0 * 1.0 + 0.0 * 1.0)) .* -0.02777778) ) ) )  + ...
+-1.7097E-4 *  ( cos( cos( (((x1*0.0 * 1.0 + x2*0.0 * 1.0 + x3*1.0 * 1.0 + 0.0 * 1.0)) .* -0.02777778) ) ) )  + ...
+-8.20545268 *  ( (-0.12796369 .*  (-7.0 + ((x1*0.0 * 1.0 + x2*1.0 * 1.0 + x3*0.0 * 1.0 + 0.0 * 1.0))) ) )  + ...
+-1.0 *  ( ( (0.72875124 +  (((x1*0.0 * 1.0 + x2*1.0 * 1.0 + x3*0.0 * 1.0 + 0.0 * 1.0)) - -1.0) )  - ((x1*0.0 * 1.0 + x2*0.0 * 1.0 + x3*1.0 * 1.0 + 0.0 * 1.0))) )  + ...
+-1.0 *  ( (((x1*0.0 * 1.0 + x2*0.0 * 1.0 + x3*1.0 * 1.0 + 0.0 * 1.0)) - ((x1*1.0 * 1.0 + x2*0.0 * 1.0 + x3*0.0 * 1.0 + 0.0 * 1.0))) )  + ...
+0;
+
+% MSE = 5.788330650694736E-18
+
+% complexity = 65
+
+% Configuration:
+%         seed: 101
+%         nbOfRuns: 30
+%         dataset: data/1DOF_N1L100_fri00_5V_4.txt
+%         populationSize: 500
+%         nbOfTransformedVar: -1
+%         lsIterations: 100
+%         maxGenerations: 30000
+%         depthLimit: 7
+% Default probHeadNode: 0.1
+% Default probTransformedVarNode: 0.2
+%         useIdentityNodes: true
+%         optMisplacementPenalty: 0.0
+%         desiredOptimum: 0 0
+%         regressionClass: LeastSquaresFit
+%         populationClass: PartitionedPopulation
+%         resultsDir: results/1DOF_N1L100_fri00_5V_4_reg10/
+%         tailFunctionSet: Multiply, Plus, Minus, Sine, Cosine, Sgn
+% Default solverName: SolverMultiThreaded
+%         nbRegressors: 10
+%         nbPredictors: 10
+% Default nbOfThreads: 2
+%         epochLength: 1000
+%         maxEpochs: 30
+% Default improvementThreshold: 0.0
+% Default maxNonImprovingEpochs: 2147483647
